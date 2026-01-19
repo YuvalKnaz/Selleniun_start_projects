@@ -1,16 +1,13 @@
 package Selleniun_start_projects.Selleniun_start_projects;
 
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertEquals;
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import java.lang.System;
 public class Selenium_calculator {
 	
 	static WebDriver  browser;
@@ -18,10 +15,10 @@ public class Selenium_calculator {
 	 @Before
 	  public void setup() {
 		 
-			  System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.34.0-win32\\geckodriver.exe");
-		      browser = new FirefoxDriver();
+ System.setProperty("webdriver.gecko.driver", "C:/matala/geckodriver.exe");
+ 		      browser = new FirefoxDriver();
 		  	  browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
-			  String url="https://testpages.eviltester.com/styled/apps/calculator.html";
+			  String url="https://testpages.eviltester.com/apps/button-calculator/";
 		      browser.get(url);
 		
 	  }

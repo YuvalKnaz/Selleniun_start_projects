@@ -1,20 +1,14 @@
 package Selleniun_start_projects.Selleniun_start_projects;
 
+import java.util.concurrent.TimeUnit;
+
+import static org.junit.Assert.assertNotEquals;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.junit.Before;
-import java.time.Duration;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
-import static org.junit.Assert.assertNotEquals;
-
-import java.lang.Thread;
 import org.openqa.selenium.support.ui.Select;
 public class AppTest {
 	 
@@ -24,7 +18,7 @@ public class AppTest {
 	 @Before
 	  public void setup() {
 		 
-			  System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.34.0-win32\\geckodriver.exe");
+			  System.setProperty("webdriver.gecko.driver", "C:/matala/geckodriver.exe");
 		      browser = new FirefoxDriver();
 		  	  browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			

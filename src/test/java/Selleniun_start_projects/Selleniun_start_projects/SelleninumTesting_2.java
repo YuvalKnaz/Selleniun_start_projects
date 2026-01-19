@@ -1,9 +1,8 @@
 package Selleniun_start_projects.Selleniun_start_projects;
 
-import static org.junit.Assert.assertNotEquals;
-
 import java.util.concurrent.TimeUnit;
 
+import static org.junit.Assert.assertNotEquals;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -19,11 +18,11 @@ public class SelleninumTesting_2 {
 	 @Before
 	  public void setup() {
 		 
-			  System.setProperty("webdriver.gecko.driver","C:\\geckodriver-v0.34.0-win32\\geckodriver.exe");
+			   System.setProperty("webdriver.gecko.driver", "C:/matala/geckodriver.exe");
 		      browser = new FirefoxDriver();
 		  	  browser.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 			
-		      browser.get("https://testpages.eviltester.com/styled/validation/input-validation.html");
+		      browser.get("https://testpages.eviltester.com/apps/7-char-val/");
 		
 	  }
 		

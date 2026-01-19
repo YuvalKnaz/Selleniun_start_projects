@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: Selleniun_start_projects.Selleniun_start_projects.SelleninumTesting_2
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 50.052 s <<< FAILURE! - in Selleniun_start_projects.Selleniun_start_projects.SelleninumTesting_2
+Tests1 on Tests1(Selleniun_start_projects.Selleniun_start_projects.SelleninumTesting_2)(Selleniun_start_projects.Selleniun_start_projects.SelleninumTesting_2)  Time elapsed: 49.401 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+BrowsingContext does no longer exist
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2e4378df-3946-4263-bfb6-5c9db9c199de, findElement {using=id, value=firstname}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 147.0.1, moz:accessibilityChecks: false, moz:buildID: 20260116091309, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 42140, moz:profile: C:\Users\1F96~1\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2e4378df-3946-4263-bfb6-5c9db9c199de
+	at Selleniun_start_projects.Selleniun_start_projects.SelleninumTesting_2.Tests1(SelleninumTesting_2.java:33)
+
