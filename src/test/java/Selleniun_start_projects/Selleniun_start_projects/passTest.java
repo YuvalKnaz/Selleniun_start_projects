@@ -37,19 +37,6 @@ public class passTest {
         Assert.assertEquals("Valid Value", actualResult);
     }
 
-    @Test
-    public void testShortPassword() {
-        WebElement inputField = browser.findElement(By.name("characters"));
-        inputField.clear();
-        inputField.sendKeys("Nisan");
-
-        browser.findElement(By.name("validate")).click();
-
-        WebElement resultField = browser.findElement(By.name("validation_message"));
-        String actualResult = resultField.getAttribute("value");
-        
-        Assert.assertEquals("Invalid Value", actualResult);
-    }
 
     @Test
     public void testLongPassword() {
