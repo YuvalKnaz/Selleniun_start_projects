@@ -1,37 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="6" passed="6" failed="0" skipped="0">
+<testng-results total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-19T17:52:46Z" name="Surefire suite" finished-at="2026-01-19T17:53:51Z" duration-ms="65872">
+  <suite started-at="2026-02-04T16:30:52Z" name="Surefire suite" finished-at="2026-02-04T16:31:29Z" duration-ms="37206">
     <groups>
     </groups>
-    <test started-at="2026-01-19T17:52:46Z" name="Surefire test" finished-at="2026-01-19T17:53:51Z" duration-ms="65872">
-      <class name="Selleniun_start_projects.Selleniun_start_projects.calcTest">
-        <test-method signature="testAddition_5_plus_5()[pri:0, instance:testAddition_5_plus_5(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:52:46Z" name="testAddition_5_plus_5" finished-at="2026-01-19T19:52:59Z" duration-ms="13065" status="PASS">
+    <test started-at="2026-02-04T16:30:52Z" name="Surefire test" finished-at="2026-02-04T16:31:29Z" duration-ms="37206">
+      <class name="Selleniun_start_projects.Selleniun_start_projects.passTest">
+        <test-method signature="testValidPassword()[pri:0, instance:testValidPassword(Selleniun_start_projects.Selleniun_start_projects.passTest)]" started-at="2026-02-04T18:30:52Z" name="testValidPassword" finished-at="2026-02-04T18:31:05Z" duration-ms="13284" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddition_5_plus_5 -->
-        <test-method signature="testMultiplication_1_times_0()[pri:0, instance:testMultiplication_1_times_0(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:52:59Z" name="testMultiplication_1_times_0" finished-at="2026-01-19T19:53:09Z" duration-ms="10703" status="PASS">
+        </test-method> <!-- testValidPassword -->
+        <test-method signature="testShortPassword()[pri:0, instance:testShortPassword(Selleniun_start_projects.Selleniun_start_projects.passTest)]" started-at="2026-02-04T18:31:05Z" name="testShortPassword" finished-at="2026-02-04T18:31:13Z" duration-ms="7914" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultiplication_1_times_0 -->
-        <test-method signature="testMultiplication_3_times_3()[pri:0, instance:testMultiplication_3_times_3(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:53:09Z" name="testMultiplication_3_times_3" finished-at="2026-01-19T19:53:20Z" duration-ms="10403" status="PASS">
+        </test-method> <!-- testShortPassword -->
+        <test-method signature="testInvalidCharacter()[pri:0, instance:testInvalidCharacter(Selleniun_start_projects.Selleniun_start_projects.passTest)]" started-at="2026-02-04T18:31:13Z" name="testInvalidCharacter" finished-at="2026-02-04T18:31:21Z" duration-ms="8238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultiplication_3_times_3 -->
-        <test-method signature="testAddition_1_plus_2()[pri:0, instance:testAddition_1_plus_2(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:53:20Z" name="testAddition_1_plus_2" finished-at="2026-01-19T19:53:31Z" duration-ms="10655" status="PASS">
+        </test-method> <!-- testInvalidCharacter -->
+        <test-method signature="testLongPassword()[pri:0, instance:testLongPassword(Selleniun_start_projects.Selleniun_start_projects.passTest)]" started-at="2026-02-04T18:31:21Z" name="testLongPassword" finished-at="2026-02-04T18:31:29Z" duration-ms="7707" status="FAIL">
+          <exception class="org.junit.ComparisonFailure">
+            <message>
+              <![CDATA[expected:<[Inv]alid Value> but was:<[V]alid Value>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.junit.ComparisonFailure: expected:<[Inv]alid Value> but was:<[V]alid Value>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at Selleniun_start_projects.Selleniun_start_projects.passTest.testLongPassword(passTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.junit.ComparisonFailure -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddition_1_plus_2 -->
-        <test-method signature="testSubtraction_5_minus_2()[pri:0, instance:testSubtraction_5_minus_2(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:53:31Z" name="testSubtraction_5_minus_2" finished-at="2026-01-19T19:53:41Z" duration-ms="10629" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubtraction_5_minus_2 -->
-        <test-method signature="testSubtraction_9_minus_9()[pri:0, instance:testSubtraction_9_minus_9(Selleniun_start_projects.Selleniun_start_projects.calcTest)]" started-at="2026-01-19T19:53:41Z" name="testSubtraction_9_minus_9" finished-at="2026-01-19T19:53:51Z" duration-ms="10287" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSubtraction_9_minus_9 -->
-      </class> <!-- Selleniun_start_projects.Selleniun_start_projects.calcTest -->
+        </test-method> <!-- testLongPassword -->
+      </class> <!-- Selleniun_start_projects.Selleniun_start_projects.passTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

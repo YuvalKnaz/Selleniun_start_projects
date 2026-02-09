@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+              <span class="suite-name border-failed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.passTest" class="method navigator-link" hash-for-method="testLongPassword">testLongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,32 +115,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testAddition_1_plus_2">testAddition_1_plus_2</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.passTest" class="method navigator-link" hash-for-method="testInvalidCharacter">testInvalidCharacter</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testAddition_5_plus_5">testAddition_5_plus_5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.passTest" class="method navigator-link" hash-for-method="testShortPassword">testShortPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testMultiplication_1_times_0">testMultiplication_1_times_0</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testMultiplication_3_times_3">testMultiplication_3_times_3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testSubtraction_5_minus_2">testSubtraction_5_minus_2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.calcTest" class="method navigator-link" hash-for-method="testSubtraction_9_minus_9">testSubtraction_9_minus_9</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="Selleniun_start_projects.Selleniun_start_projects.passTest" class="method navigator-link" hash-for-method="testValidPassword">testValidPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -141,52 +140,123 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+          <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">Selleniun_start_projects.Selleniun_start_projects.calcTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">Selleniun_start_projects.Selleniun_start_projects.passTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddition_1_plus_2">
-                  </a> <!-- testAddition_1_plus_2 -->
-                  <span class="method-name">testAddition_1_plus_2</span>
+                  <a name="testLongPassword">
+                  </a> <!-- testLongPassword -->
+                  <span class="method-name">testLongPassword</span>
+                  <div class="stack-trace"><b>"org.junit.ComparisonFailure: expected:&lt;[Inv]alid Value&gt; but was:&lt;[V]alid Value&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at Selleniun_start_projects.Selleniun_start_projects.passTest.testLongPassword(passTest.java:65)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+... Removed 17 stack frames<br/> org.junit.ComparisonFailure: expected:&lt;[Inv]alid Value&gt; but was:&lt;[V]alid Value&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at Selleniun_start_projects.Selleniun_start_projects.passTest.testLongPassword(passTest.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:138)
+	at org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)
+	at org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)
+	at org.testng.TestRunner$1.run(TestRunner.java:682)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1012)
+	at org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+"</b><br>org.junit.Assert.assertEquals(Assert.java:115)<br>org.junit.Assert.assertEquals(Assert.java:144)<br>Selleniun_start_projects.Selleniun_start_projects.passTest.testLongPassword(passTest.java:65)<br>java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br>java.base/java.lang.reflect.Method.invoke(Method.java:565)<br>org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)<br>org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)<br>org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)<br>org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)<br>org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)<br>org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)<br>org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)<br>org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)<br>org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)<br>org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)<br>org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)<br>org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)<br>org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)<br>org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)<br>org.junit.runners.ParentRunner.run(ParentRunner.java:309)<br>org.junit.runner.JUnitCore.run(JUnitCore.java:160)<br>org.junit.runner.JUnitCore.run(JUnitCore.java:138)<br>org.testng.junit.JUnit4TestRunner.start(JUnit4TestRunner.java:81)<br>org.testng.junit.JUnit4TestRunner.run(JUnit4TestRunner.java:69)<br>org.testng.TestRunner$1.run(TestRunner.java:682)<br>org.testng.TestRunner.runWorkers(TestRunner.java:1012)<br>org.testng.TestRunner.privateRunJUnit(TestRunner.java:713)<br>org.testng.TestRunner.run(TestRunner.java:614)<br>org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br>org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br>org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br>org.testng.SuiteRunner.run(SuiteRunner.java:240)<br>org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br>org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br>org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)<br>org.testng.TestNG.runSuitesLocally(TestNG.java:1123)<br>org.testng.TestNG.run(TestNG.java:1031)<br>org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:112)<br>org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)<br>org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)<br>org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)<br>org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)<br>org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)<br>org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)<br>
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Selleniun_start_projects.Selleniun_start_projects.passTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testInvalidCharacter">
+                  </a> <!-- testInvalidCharacter -->
+                  <span class="method-name">testInvalidCharacter</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddition_5_plus_5">
-                  </a> <!-- testAddition_5_plus_5 -->
-                  <span class="method-name">testAddition_5_plus_5</span>
+                  <a name="testShortPassword">
+                  </a> <!-- testShortPassword -->
+                  <span class="method-name">testShortPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testMultiplication_1_times_0">
-                  </a> <!-- testMultiplication_1_times_0 -->
-                  <span class="method-name">testMultiplication_1_times_0</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testMultiplication_3_times_3">
-                  </a> <!-- testMultiplication_3_times_3 -->
-                  <span class="method-name">testMultiplication_3_times_3</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSubtraction_5_minus_2">
-                  </a> <!-- testSubtraction_5_minus_2 -->
-                  <span class="method-name">testSubtraction_5_minus_2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSubtraction_9_minus_9">
-                  </a> <!-- testSubtraction_9_minus_9 -->
-                  <span class="method-name">testSubtraction_9_minus_9</span>
+                  <a name="testValidPassword">
+                  </a> <!-- testValidPassword -->
+                  <span class="method-name">testValidPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,7 +272,7 @@
 &lt;suite thread-count=&quot;1&quot; junit=&quot;true&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test name=&quot;Surefire test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Selleniun_start_projects.Selleniun_start_projects.calcTest&quot;/&gt;
+      &lt;class name=&quot;Selleniun_start_projects.Selleniun_start_projects.passTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -242,36 +312,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testAddition_5_plus_5')
-data.setCell(0, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(0, 3, 13065);
+data.setCell(0, 1, 'testValidPassword')
+data.setCell(0, 2, 'Selleniun_start_projects.Selleniun_start_projects.passTest')
+data.setCell(0, 3, 13284);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testMultiplication_1_times_0')
-data.setCell(1, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(1, 3, 10703);
+data.setCell(1, 1, 'testInvalidCharacter')
+data.setCell(1, 2, 'Selleniun_start_projects.Selleniun_start_projects.passTest')
+data.setCell(1, 3, 8238);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testAddition_1_plus_2')
-data.setCell(2, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(2, 3, 10655);
+data.setCell(2, 1, 'testShortPassword')
+data.setCell(2, 2, 'Selleniun_start_projects.Selleniun_start_projects.passTest')
+data.setCell(2, 3, 7914);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testSubtraction_5_minus_2')
-data.setCell(3, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(3, 3, 10629);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testMultiplication_3_times_3')
-data.setCell(4, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(4, 3, 10403);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSubtraction_9_minus_9')
-data.setCell(5, 2, 'Selleniun_start_projects.Selleniun_start_projects.calcTest')
-data.setCell(5, 3, 10287);
+data.setCell(3, 1, 'testLongPassword')
+data.setCell(3, 2, 'Selleniun_start_projects.Selleniun_start_projects.passTest')
+data.setCell(3, 3, 7707);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 37 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -297,30 +359,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Selleniun_start_projects.Selleniun_start_projects.calcTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Selleniun_start_projects.Selleniun_start_projects.passTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testAddition_5_plus_5</span>
+                <span class="method-name">testValidPassword</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMultiplication_1_times_0</span>
-                <span class="method-start">13066 ms</span>
+                <span class="method-name">testShortPassword</span>
+                <span class="method-start">13284 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testMultiplication_3_times_3</span>
-                <span class="method-start">23769 ms</span>
+                <span class="method-name">testInvalidCharacter</span>
+                <span class="method-start">21199 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testAddition_1_plus_2</span>
-                <span class="method-start">34173 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSubtraction_5_minus_2</span>
-                <span class="method-start">44828 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSubtraction_9_minus_9</span>
-                <span class="method-start">55457 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLongPassword</span>
+                <span class="method-start">29438 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
